@@ -28,3 +28,16 @@ shipsafe doctor
 
 The `Formula/shipsafe.rb` formula is updated automatically by the
 [shipsafe release workflow](https://github.com/baneido/shipsafe/blob/main/.github/workflows/release.yml).
+
+## safe-deps
+
+Static linter for package-management security practices (reproducibility,
+integrity, registry/TLS safety, supply-chain hardening).
+
+```sh
+brew install baneido/tap/safe-deps
+```
+
+Installs the prebuilt release binary — no Rust toolchain required. The
+`Formula/safe-deps.rb` formula is updated automatically by the
+[safe-deps release workflow](https://github.com/baneido/safe-deps/blob/main/.github/workflows/release.yml).
