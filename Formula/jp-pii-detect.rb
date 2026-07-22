@@ -8,27 +8,27 @@
 class JpPiiDetect < Formula
   desc "Static PII detector for Japan (My Number, phone, address, etc.)"
   homepage "https://github.com/baneido/jp-pii-detector"
-  version "0.4.0"
+  version "0.4.3"
 
   on_macos do
     on_arm do
-      url "https://github.com/baneido/jp-pii-detector/releases/download/v0.4.0/jp-pii-detect_darwin_arm64.tar.gz"
-      sha256 "f7e819f817d78bd436d0e0c9e02307ac67005be7d64d0009b3758de78d4a1796"
+      url "https://github.com/baneido/jp-pii-detector/releases/download/v0.4.3/jp-pii-detect_darwin_arm64.tar.gz"
+      sha256 "9ec841cf3ed525f63fe76e88c437c4ac1878b8768cc79053e428aee9331da7a7"
     end
     on_intel do
-      url "https://github.com/baneido/jp-pii-detector/releases/download/v0.4.0/jp-pii-detect_darwin_amd64.tar.gz"
-      sha256 "44dc8525b793389a547fd6c9d11988c475eb7fb8b00333392c17b9e3e0823342"
+      url "https://github.com/baneido/jp-pii-detector/releases/download/v0.4.3/jp-pii-detect_darwin_amd64.tar.gz"
+      sha256 "8a57fa6b1a390e2a6591111d2df07336115c7bf973900cd916b07a2afd70f546"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/baneido/jp-pii-detector/releases/download/v0.4.0/jp-pii-detect_linux_arm64.tar.gz"
-      sha256 "e5049a648bb3cf7e54fbcd2f38acc0f61a7cd80450a0f30b3817d626529478f1"
+      url "https://github.com/baneido/jp-pii-detector/releases/download/v0.4.3/jp-pii-detect_linux_arm64.tar.gz"
+      sha256 "fd1458d43c5d2991143f26b883c3f1af3ad98f3542b91a8b3f4c31f0dc941848"
     end
     on_intel do
-      url "https://github.com/baneido/jp-pii-detector/releases/download/v0.4.0/jp-pii-detect_linux_amd64.tar.gz"
-      sha256 "6ad88a4c32371c0ea2bc5be66118cf14e4b0ddbcbadc2a1f2ebefddfb70d97ed"
+      url "https://github.com/baneido/jp-pii-detector/releases/download/v0.4.3/jp-pii-detect_linux_amd64.tar.gz"
+      sha256 "a95491dcbaf9bd261f15c4713bcfa3c9a18dc92bd21d3bed9b6568b200da088f"
     end
   end
 
