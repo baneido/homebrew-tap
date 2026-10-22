@@ -5,30 +5,31 @@
 #
 # Go 不要の方針に合わせ、ソースからビルドせず Release のビルド済みバイナリを
 # ダウンロードして展開する formula にしている。
+# version は URL（releases/download/<tag>/）から Homebrew が自動で読み取るため書かない
+# （書くと brew audit が「redundant version」と指摘する）。
 class JpPiiDetect < Formula
   desc "Static PII detector for Japan (My Number, phone, address, etc.)"
   homepage "https://github.com/baneido/jp-pii-detector"
-  version "0.8.1"
 
   on_macos do
     on_arm do
-      url "https://github.com/baneido/jp-pii-detector/releases/download/v0.8.1/jp-pii-detect_darwin_arm64.tar.gz"
-      sha256 "9aa8e93dd33ed54d7356149d3652e9329a550cbb1fc3ad7c43ed799d9325aa7c"
+      url "https://github.com/baneido/jp-pii-detector/releases/download/v0.8.2/jp-pii-detect_darwin_arm64.tar.gz"
+      sha256 "1c398d0c6dbbd6624e58486827cc9c6486aff580c2220b879f5a1e7fa38c765b"
     end
     on_intel do
-      url "https://github.com/baneido/jp-pii-detector/releases/download/v0.8.1/jp-pii-detect_darwin_amd64.tar.gz"
-      sha256 "f2420fd708de85b15d9ef0bfc5a5b5a6fdc14f276e73feaa1da58691f2fce30d"
+      url "https://github.com/baneido/jp-pii-detector/releases/download/v0.8.2/jp-pii-detect_darwin_amd64.tar.gz"
+      sha256 "796562dc7a7d829c06d1cf8a7c2a037bb9046c21d0660c3b7a9682fc9d387a04"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/baneido/jp-pii-detector/releases/download/v0.8.1/jp-pii-detect_linux_arm64.tar.gz"
-      sha256 "4370abf5ae6c9b96150a4cd4662f1eeebcd9449612157d171ca26fb9aa9fa301"
+      url "https://github.com/baneido/jp-pii-detector/releases/download/v0.8.2/jp-pii-detect_linux_arm64.tar.gz"
+      sha256 "6ee40da6af3b60da68d16ac08f183c3b8d4e70cfc0d2a6fdc6d892c6d1355c24"
     end
     on_intel do
-      url "https://github.com/baneido/jp-pii-detector/releases/download/v0.8.1/jp-pii-detect_linux_amd64.tar.gz"
-      sha256 "1fdfeace6b18ad781158a04c9a568bf3b73bf9db76ec6ecbca8f0e233cfd7b01"
+      url "https://github.com/baneido/jp-pii-detector/releases/download/v0.8.2/jp-pii-detect_linux_amd64.tar.gz"
+      sha256 "65afccc245bc4be71c0e5879d0c87fdeb362f6e2472850d3fee0a6ba5b81b43f"
     end
   end
 
